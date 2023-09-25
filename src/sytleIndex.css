@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,400&display=swap');
+
+:root {
+    --colorTitulo: ghostwhite; 
+    --colorTituloHover: blanchedalmond;
+    --colorTextoIcono: antiquewhite;
+    --colorSubtitulo: blanchedalmond;
+    --colorForm: white; 
+    --colorButton: bisque;
+
+    --fontTitulo: 'Merriweather', serif;
+}
+
+
+* {
+    margin: 0; 
+    padding: 0; 
+}
+
+h1 {
+    font-family: var(--fontTitulo);
+    color: var(--colorTitulo);
+    padding-top: 15%;
+    text-align: center;
+    word-spacing: 20px;
+    font-size: 3vw;
+    text-shadow: 8px 8px 6px rgba(0, 0, 0, 0.5);
+
+}
+
+.animacionLetras {
+    display: inline-block; 
+    white-space: nowrap;
+    overflow: hidden;
+    color: var(--colorTitulo);
+    border-right: 0.15em solid ;
+    animation: typing 5s steps(40, end), blink-caret 0.9s step-end backwards;
+}
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 80%;
+    }
+}
+  
+@keyframes blink-caret {
+    from, to{
+        border-color: transparent;
+    }
+    50% {
+        border-color: var(--colorTitulo);
+    }
+}
+
+html {
+    background-image: url(img/dessert.jpg);
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flexContainerMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+#linkEnter {
+    text-decoration: none; 
+    color: var(--colorTitulo);
+
+}
+
+#linkEnter:hover {
+    color: var(--colorTituloHover);
+    text-shadow: 8px 8px 6px rgba(0, 0, 0, 1.0);
+}
+
+.contenedorIcono {
+    margin: 1vw; 
+    position: relative;
+    display: inline-block;
+}
+
+span img {
+    width: 4vw;
+    height: auto;
+    margin-right: 15px; 
+}
+
+.textoIcono {
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.2vw;
+    bottom: -40px; 
+    left: 45%;
+    transform: translateX(-50%);
+    color: var(--colorTextoIcono); 
+    opacity: 0; 
+    transition: opacity 0.3s; 
+  }
+
+.contenedorIcono:hover .textoIcono {
+    opacity: 1; 
+}
+
+h2 {
+    color: var(--colorSubtitulo);
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 8px 8px 6px rgba(0, 0, 0, 1.0);
+    margin: 1vw;
+}
+
+form {
+    margin-left: 46%;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: var(--colorForm);
+    text-shadow: 8px 8px 6px rgba(0, 0, 0, 1.0);
+    
+}
+
+input[type="submit"] {
+    width: 5vw;
+    height: 2vw;
+    font-size: 1.5vw;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 7px;
+    opacity: 0.9; 
+    border: none;
+    background-color: var(--colorButton);
+}
+
+

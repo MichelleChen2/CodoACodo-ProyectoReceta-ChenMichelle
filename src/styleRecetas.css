@@ -1,0 +1,153 @@
+
+* {
+    margin: 0; 
+    padding: 0; 
+}
+
+:root {
+    --colorSubtitulo: darkred;
+    --colorhover: maroon; 
+    --colorLink: firebrick; 
+    --colorTexto: black;
+    
+    --colorFondoTable: antiquewhite; 
+}
+
+body {
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.contenedorIcono {
+    margin: 15px; 
+    position: sticky;
+    display: inline-block;
+}
+
+
+.contenedorListaRecetas h2 {
+    color: var(--colorSubtitulo);
+    font-size: 42pt;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 350px;
+    padding-top: 20px;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+
+}
+
+.contenedorListaRecetas {
+    position: center;
+}
+
+.contenedorListaRecetas ul {
+    font-size: 25pt;
+    font-weight: bold;
+    align-items: center;
+    margin-left: 650px;
+    list-style-type: none;
+
+}
+
+.contenedorListaRecetas ul li a{
+    color: var(--colorLink);
+    text-decoration: none;
+    text-align: center;
+}
+
+.contenedorListaRecetas ul li a:hover {
+    color: var(--colorhover);
+}
+
+span img {
+    width: 60px;
+    height: auto;
+    margin-right: 15px; 
+    position: relative;
+    border-radius: 0%;
+}
+
+.textoIcono {
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.2vw;
+    bottom: -1.4vw; 
+    left: 60%;
+    transform: translateX(-50%);
+    color: var(--colorLink); 
+    opacity: 0; 
+    transition: opacity 0.3s; 
+  }
+
+.contenedorIcono:hover .textoIcono {
+    opacity: 1; 
+}
+
+h3 {
+    font-size: xx-large;
+    color: var(--colorhover);
+    margin-left: 25%;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+iframe {
+    align-self: center;
+    margin-left: 30%;
+}
+
+table {
+    border-radius: 10px;
+    text-align: center;
+    border-collapse: separate;
+    background-color: var(--colorFondoTable);
+    margin-left: 38%;
+    font-size: 14pt;
+}
+
+th {
+    background-color: lightsalmon;
+    border: 2px solid;
+    border-color: var(--colorSubtitulo);
+    border-radius: 10px;
+    font-weight: 900;
+}
+
+td {
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: var(--colorSubtitulo);
+}
+
+img {
+    margin-left: 25%;
+    display: flex;
+    border-radius: 25px;
+}
+
+ol {
+    font-size: 18pt;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 15%;
+    color: var(--colorTexto);
+    font-weight: 70;
+}
+
+ol li {
+    padding: 15px;
+    text-align: justify;
+}
+
+h4 {
+    margin-left: 15%;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--colorhover); 
+}
+
+
+ol li::marker {
+    color: var(--colorhover);
+    font-weight: bold;
+}
+

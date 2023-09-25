@@ -1,0 +1,87 @@
+
+* {
+    margin: 0; 
+    padding: 0; 
+}
+
+:root {
+    --colorTitulo: blanchedalmond;
+    --colorTextoIcono: antiquewhite; 
+    --colorTexto: white; 
+    --colorFondoBoton: darkred; 
+    --colorFondoHover: black; 
+}
+
+.contenedorIcono {
+    margin: 1vw; 
+    position: relative;
+    display: inline-block;
+}
+
+span img {
+    width: 60px;
+    height: auto;
+    margin-right: 15px; 
+    position: relative;
+}
+
+.textoIcono {
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.2vw;
+    bottom: -1.2vw; 
+    left: 45%;
+    transform: translateX(-50%);
+    color: var(--colorTextoIcono); 
+    opacity: 0; 
+    transition: opacity 0.3s; 
+  }
+
+.contenedorIcono:hover .textoIcono {
+    opacity: 1; 
+}
+
+h1 {
+    color: var(--colorTitulo);
+    text-shadow: 10px 10px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 40pt;
+}
+
+body {
+    background-image: url(img/cooking.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: contrast(95%); 
+}
+
+p {
+    color: var(--colorTexto) !important;
+    padding: 20px;
+    font-size: 25pt;
+    text-shadow: 8px 8px 6px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    text-justify: distribute-all-lines;
+}
+
+a input {
+    font-size: x-large;
+    margin-left: 43%;
+}
+
+input[type="button"] {
+    border: none;
+    border-radius: 3px; 
+    color: var(--colorTexto);
+    background-color: var(--colorFondoBoton);
+}
+
+
+input[type="button"]:hover {
+    background-color: var(--colorFondoHover);
+}
+
+.centrar {
+    display: flex;
+    justify-content: center !important;
+}

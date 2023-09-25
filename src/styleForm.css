@@ -1,0 +1,77 @@
+
+
+body {
+    background-image: linear-gradient(to right, black 50%, transparent 53%), url('img/food.jpg');
+    background-position: left center, right center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, 800px auto;
+}
+
+
+header {
+    position: relative;
+}
+
+.flexContainerMenu {
+    display: flex; 
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.contenedorForm {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    color: whitesmoke;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+input:focus {
+    background-color: bisque;
+}
+
+.contenedorIcono {
+    margin: 1em; 
+    position: relative;
+    display: inline-block;
+}
+
+span img {
+    width: 3.6em;
+    height: auto;
+    margin-right: 15px; 
+}
+
+.textoIcono {
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.2vw;
+    bottom: -1.2vw; 
+    left: 45%;
+    transform: translateX(-50%);
+    color: antiquewhite; 
+    opacity: 0; 
+    transition: opacity 0.3s; 
+  }
+
+.contenedorIcono:hover .textoIcono {
+    opacity: 1; 
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: linear-gradient(black, black);
+        align-items: center;
+    }
+}
+
+.centrar {
+    justify-content: center;
+}
