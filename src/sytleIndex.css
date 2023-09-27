@@ -57,7 +57,7 @@ h1 {
 }
 
 html {
-    background-image: url(img/dessert.jpg);
+    background-image: url(../img/dessert.jpg);
     height: 100vh;
     overflow: hidden;
     background-repeat: no-repeat;
