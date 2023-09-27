@@ -49,7 +49,7 @@ h1 {
 }
 
 body {
-    background-image: url(img/cooking.jpg);
+    background-image: url(../img/cooking.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     filter: contrast(95%); 
